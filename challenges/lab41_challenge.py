@@ -1,24 +1,35 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
 def main():
-    challenge= ["science", "turbo", ["goggles", "eyes"], "nothing"]
+    marvelchars= {
+    "Starlord":
+         {"real name": "peter quill",
+         "powers": "dance moves",
+         "archenemy": "Thanos"},
 
+    "Mystique":
+         {"real name": "raven darkholme",
+         "powers": "shape shifter",
+         "archenemy": "Professor X"},
 
-    trial= ["science", "turbo", {"eyes": "goggles", "goggles": "eyes"}, "nothing"]
-
-
-    nightmare= [{"slappy": "a", "text": "b", "kumquat": "goggles", "user"
-        :{"awesome": "c", "name":
-            {"first": "eyes", "last": "toes"}},
-        "banana": 15, "d": "nothing"}]
+    "Hulk":
+         {"real name": "bruce banner",
+         "powers": "super strength",
+         "archenemy": "adrenaline"}
+             }
     
-    print(f"My {challenge[2][1]}! The {challenge[2][0]} do {challenge[-1]}!")
-    trialEyes = trial[2]["goggles"];
-    trialGoggles = trial[2]["eyes"];
-    trialNothing = trial[-1];
-    print(f"My {trialEyes}! The {trialGoggles} do {trialNothing}!")
-    nightmareEyes=nightmare[0]["user"]["name"]["first"] 
-    nightmareGoggles=nightmare[0]["kumquat"]
-    nightmareNothing=nightmare[0]["d"]
-    print(f"My {nightmareEyes}! The {nightmareGoggles} do {nightmareNothing}!")
-main()
+    while True:
+        char_name = input("Which character do you want to know about? (Starlord, Mystique, Hulk) ").lower().title()
+        char_stat = input("What statistic do you want to know about? (real name, powers, archenemy) ").lower()
+        value = marvelchars[char_name][char_stat]
+        if(char_stat == 'real name'):
+             value= value.title()
+    
+        print(f"{char_name}'s {char_stat} is: {value}")
+        print()
+        response = input("Do you want to try again? (Y or N) ").lower()
+        if response == "n":
+            break
+
+if __name__ == "__main__":
+    main()
