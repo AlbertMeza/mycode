@@ -1,5 +1,9 @@
-user=15
-print(user)
+#!/usr/bin/env python3
+import requests
+from pprint import pprint
 
-USER_ERROR = 16
-print(USER_ERROR)
+URL = "https://pokeapi.co/api/v2/pokemon/ditto"
+
+resp= requests.get(URL).json()
+
+pprint(resp)
