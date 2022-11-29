@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Alberts Pokemon API</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename = 'routes.css') }}">
+    </head>
+<nav id="navbar">
+  <header>Alberts Pokemon API Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#what"
+        >What is an API?</a>
+    </li>
+    <li>
+        <a class="nav-link" href="#routes">Routes></a>
+    </li>
+    <li>
+        <a class="nav-link" href="#missing">The API is missing stuff!</a>
+    </li>
+     <li>
+      <a class="nav-link" href="#who">So who built this?</a>
+    </li>
+     <li>
+      <a class="nav-link" href="#where">Where did you get this data?</a>
+    </li>
+    <li>
+        <a class="nav-link" href="#stack">What is the technology stack></a>
+    </li>
+  </ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction:<code>Alberts Pokemon API</code></header>
+    <article>
+        <p> This website provides a fun and enjoyable way to make random pokemon teams. We include a neat little photo and some basic information. 
+        <b>Who doesn't love pokemon?</b>
+        </p>
+    </article>
+  </section>
+  <section class="main-section" id="what">
+    <header>What is an API?</header>
+    <article>
+        <p>An API(Application Programming Interface) is a contract that allows developers to interact with an application through a set of interfaces.</p>
+        <p>A RESTful API is an API that conforms to a set of loose conventions based on HTTP vers, errors, and hyperlinks.</p>
+    </article>
+  </section>
+<section class="main-section" id="routes">
+    <header>API Routes</header>
+    <article>
+        <h1>"/"</h1>
+        <p>The default route which randomly assigns you a team of pokemon!</p>
+        <h1>"/get-{1-7}"</h1>
+      <p>If you want a team from a certain region for example the original pokemon(generation 1), we have that option for you</p>
+      <ul>
+          <li>Generation one - Kanto</li>
+          <li>Generation two - Johto</li>
+          <li>Generation three - Hoenn</li>
+          <li>Generation four - Sinnoh</li>
+          <li>Generation five - Unova</li>
+          <li>Generation six - Kalo</li>
+          <li>Generation seven - Alola</li>
+          <li>Generation eight - Galar</li>
+     </ul>
+     <h1>"/random-pokemon"</h1>
+     <p>This returns a JSON of a randomly assigned pokemon and after you go to the default route, you get a nice photo of that pokemon!</p>
+     <h1>"/pokemon/{name}"</h1>
+     <p>This returns a JSON of a pokemon you want to look up and after you go to the default route, you get a nice photo of that pokemon!</p>
+    </article>
+  </section>
+  <section class="main-section" id="missing">
+    <header>The API is missing stuff or has bugs!</header>
+    <article>
+        <p>I know! Have any ideas? Let me know at almez5202@gmail.com
+        </p>
+    </article>
+  </section>
+  <section class="main-section" id="who">
+    <header>So who built this?</header>
+    <article>
+        <p>This project original started as a Flask assignment and was created by Albert Meza as a graded assignment. Maybe one day, i'll deprecate this version.
+        </p>
+
+        <p>I was a VGC pokemon player in high school and also spent plenty of time playing OU on smogon. Have peaked in the top 100 players on smogon before the Mega Mawile ban. Good times.
+        </p>
+        <p>My favorite pokemon has always been Amoonguss
+        </p>
+    </article>
+  </section>
+  <section class="main-section" id="where">
+    <header>Where did you get all this data?</header>
+    <article>
+        <p> All this data comes from the pokeapi.co API, this is just a concise and fun mini project based on that API
+        </p>
+    </article>
+  </section>
+  <section class="main-section" id="stack">
+    <header>What's the technology stack?</header>
+    <article>
+        <p>It's a python project with some HTML, CSS, Javascript. Flask was used and emphasized for this along with Jinjia.
+    </article>
+  </section>
+</html>

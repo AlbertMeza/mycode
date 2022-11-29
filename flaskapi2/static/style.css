@@ -12,13 +12,13 @@
   /* Control the left side */
 .left {
     left: 0;
-    background-color: #3A80ED;
+    background-color: red;
 }
   
   /* Control the right side */
 .right {
     right: 0;
-    background-color: #EF994A;
+    background-color: DodgerBlue;
 }
   
   /* If you want the content centered horizontally and vertically */

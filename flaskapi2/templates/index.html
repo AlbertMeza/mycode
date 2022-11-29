@@ -1,14 +1,13 @@
 <!doctype html>
 <html>
     <head>
-        <title>Pokemon API</title>
+        <title>Alberts Pokemon API</title>
         <link rel="stylesheet" href="{{ url_for('static', filename = 'style.css') }}">
         <script type="text/javascript", src={{ url_for('static', filename = 'scripts.js') }}></script>
     </head>
     <body>
-        <img id="random_pokemon_image_url_id" src="https://pngimg.com/uploads/pokeball/pokeball_PNG21.png" alt="Random Pokemon Click Here" onclick="randomPokemon()">
-
         <div class="split left">
+            <img id="random_pokemon_image_url_id" src="https://pngimg.com/uploads/pokeball/pokeball_PNG21.png" alt="Pokeball">
             <div class="centered">
                 <ul>
                     {% for pokemon in pokemons %}
@@ -21,12 +20,12 @@
         <div class="split right">
             <div class="centered">
                 <img id="image_url" src={{ recent_pokemon_data.image_url }} alt= {{recent_pokemon_data.name}} >
-                <h2><label id="name">Name {{recent_pokemon_data.name}}</label></h2>
-                <h2><label id="speed">SPEED {{recent_pokemon_data.speed}}</label></h2>
-                <h2><label id="defense">DEFENSE {{recent_pokemon_data.defense}} / SPECIAL {{recent_pokemon_data.special_defense}}</label></h2>
-                <h2><label id="attack">ATTACK {{recent_pokemon_data.attack}} / SPECIAL {{recent_pokemon_data.special_attack}}</label></h2>
+                <h2><label id="name">{{recent_pokemon_data.name}}</label></h2>
                 <h2><label id="hp">HP {{recent_pokemon_data.hp}}</label></h2>
-                <h2><label id="weight">WEIGHT {{recent_pokemon_data.weight}}</label></h2>
+                <h2><label id="attack">ATTACK {{recent_pokemon_data.attack}} / SpATK {{recent_pokemon_data.special_attack}}</label></h2>
+                <h2><label id="defense">DEFENSE {{recent_pokemon_data.defense}} / SpDef {{recent_pokemon_data.special_defense}}</label></h2>
+                <h2><label id="speed">SPEED {{recent_pokemon_data.speed}}</label></h2>
+                <h2><label id="weight">WEIGHT {{recent_pokemon_data.weight}}g</label></h2>
             </div>
         </div>
 
