@@ -35,8 +35,8 @@ def root():
         }
         pokemons.append(data)
     recent_pokemon_data = load_most_recent_pokemon()
-    return render_template('index.html',pokemons=pokemons, recent_pokemon_data=recent_pokemon_data)    
-
+    return render_template('index.html',pokemons=pokemons, recent_pokemon_data=recent_pokemon_data)
+  
 @app.route('/gen-one', methods=['GET'])
 def gen_one():
     pokemons = []
@@ -59,7 +59,7 @@ def gen_one():
         pokemons.append(data)
     recent_pokemon_data = load_most_recent_pokemon()
     return render_template('index.html',pokemons=pokemons, recent_pokemon_data=recent_pokemon_data)
-
+  
 @app.route('/gen-two', methods=['GET'])
 def gen_two():
     pokemons = []
@@ -105,7 +105,7 @@ def gen_three():
         pokemons.append(data)
     recent_pokemon_data = load_most_recent_pokemon()
     return render_template('index.html',pokemons=pokemons, recent_pokemon_data=recent_pokemon_data)
-
+ 
 @app.route('/gen-four', methods=['GET'])
 def gen_four():
     pokemons = []
@@ -128,6 +128,7 @@ def gen_four():
         pokemons.append(data)
     recent_pokemon_data = load_most_recent_pokemon()
     return render_template('index.html',pokemons=pokemons, recent_pokemon_data=recent_pokemon_data)
+
 @app.route('/gen-five', methods=['GET'])
 def gen_five():
     pokemons = []
@@ -150,7 +151,7 @@ def gen_five():
         pokemons.append(data)
     recent_pokemon_data = load_most_recent_pokemon()
     return render_template('index.html',pokemons=pokemons, recent_pokemon_data=recent_pokemon_data)
-
+  
 @app.route('/gen-six', methods=['GET'])
 def gen_six():
     pokemons = []
@@ -168,12 +169,12 @@ def gen_six():
             'special_attack': resp['stats'][3]['base_stat'],
             'hp': resp['stats'][0]['base_stat'],
             'weight': resp['weight'],
-            'image_url': resp['sprites']['other']['dream_world']['front_default']
+            'image_url': resp['sprites']['front_default']
         }
         pokemons.append(data)
     recent_pokemon_data = load_most_recent_pokemon()
     return render_template('index.html',pokemons=pokemons, recent_pokemon_data=recent_pokemon_data)
-
+  
 @app.route('/gen-seven', methods=['GET'])
 def gen_seven():
     pokemons = []
@@ -191,12 +192,12 @@ def gen_seven():
             'special_attack': resp['stats'][3]['base_stat'],
             'hp': resp['stats'][0]['base_stat'],
             'weight': resp['weight'],
-            'image_url': resp['sprites']['other']['dream_world']['front_default']
+            'image_url': resp['sprites']['front_default']
         }
         pokemons.append(data)
     recent_pokemon_data = load_most_recent_pokemon()
     return render_template('index.html',pokemons=pokemons, recent_pokemon_data=recent_pokemon_data)
-
+  
 @app.route('/gen-eight', methods=['GET'])
 def gen_eight():
     pokemons = []
@@ -219,7 +220,7 @@ def gen_eight():
         pokemons.append(data)
     recent_pokemon_data = load_most_recent_pokemon()
     return render_template('index.html',pokemons=pokemons, recent_pokemon_data=recent_pokemon_data)
-
+  
 @app.route('/random-pokemon', methods=['GET'])
 def random_pokemon():
     number = str(randint(1,906))

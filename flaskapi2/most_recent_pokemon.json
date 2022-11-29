@@ -1,0 +1,12 @@
+{
+    "number": "776",
+    "name": "TURTONATOR",
+    "speed": 36,
+    "defense": 135,
+    "special_defense": 85,
+    "attack": 78,
+    "special_attack": 91,
+    "hp": 60,
+    "weight": 2120,
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/776.png"
+}
