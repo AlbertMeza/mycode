@@ -1,12 +1,12 @@
 {
-    "number": "129",
-    "name": "MAGIKARP",
-    "speed": 80,
-    "defense": 55,
-    "special_defense": 20,
-    "attack": 10,
-    "special_attack": 15,
-    "hp": 20,
+    "number": "14",
+    "name": "KAKUNA",
+    "speed": 35,
+    "defense": 50,
+    "special_defense": 25,
+    "attack": 25,
+    "special_attack": 25,
+    "hp": 45,
     "weight": 100,
-    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/129.svg"
+    "image_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/14.svg"
 }
